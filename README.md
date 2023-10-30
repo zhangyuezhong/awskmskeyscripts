@@ -24,12 +24,12 @@
 ## Notes.
 Ensure that the AWS credentials have the necessary permissions to utilize the KMS key.
 
-# Create CSR
+# Create CSR with KMS Asymmetric key
     python kms_generate_csr.py
     Then follow the prompt to enter
     KMS Key ID:
 
-# Convert the Asymmetric key (public key to JWKS)
+# Convert the public key of KMS Asymmetric key to JWKS
     python kms_public_key_to_jwks.py
     Then follow the prompt to enter
     KMS Key ID:
