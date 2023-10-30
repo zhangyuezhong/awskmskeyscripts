@@ -55,3 +55,9 @@ If you have a Lambda function that requires access to data from Okta and you've 
 3.  You can import the corresponding public key into your Okta configuration. However, Okta specifically requires the public key to be in JWKS (JSON Web Key Set) format.
     
 4.  To meet Okta's requirements, you can use the `kms_public_key_to_jwks.py` script to convert the public key into JWKS format. After this conversion, you can add the key to your Okta configuration, ensuring compatibility and security.
+
+
+# Credit to
+"How to Replace the Signature of an Issued CSR
+GitHub g-a-d/aws-kms-sign-csr -- https://github.com/g-a-d/aws-kms-sign-csr"
+AWS KMSでCSRを発行する  https://qiita.com/nobrin/items/85c37f9b0d6245a1a2e4
