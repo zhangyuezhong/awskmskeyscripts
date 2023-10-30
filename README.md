@@ -5,33 +5,29 @@
 
 ## Installation
 
-git clone https://github.com/zhangyuezhong/awskmskeyscripts.git
+    git clone https://github.com/zhangyuezhong/generate_csr_with_kms.git
 
 ## create a new virtualenv
 
-cd generate_csr_with_kms
-python3 -m venv venv
-venv\Scripts\activate.bat (On Windows)
-. venv/bin/activate (On Linux)
+    cd generate_csr_with_kms
+    python3 -m venv venv
+    venv\Scripts\activate.bat (On Windows)
+    . venv/bin/activate (On Linux)
 
 ## install prerequisite modules
 
-pip3 install -r requirements.txt
-pip3 install boto3
+    pip3 install -r requirements.txt
+    pip3 install boto3
 
 ## Notes.
-
 Ensure that the AWS credentials have the necessary permissions to utilize the KMS key.
 
-# create CSR
+# Create CSR
+    python kms_generate_csr.py
+    Then follow the prompt to enter
+    KMS Key ID:
 
-python kms_generate_csr.py
-
-Then follow the prompt to enter
-KMS Key ID:
-
-# to convert the Asymmetric key (public key to JWKS)
-
-python kms_public_key_to_jwks.py
-Then follow the prompt to enter
-KMS Key ID:
+# Convert the Asymmetric key (public key to JWKS)
+    python kms_public_key_to_jwks.py
+    Then follow the prompt to enter
+    KMS Key ID:
