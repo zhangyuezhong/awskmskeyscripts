@@ -5,7 +5,7 @@
 
 ## Installation
 
-    git clone https://github.com/zhangyuezhong/generate_csr_with_kms.git
+    git clone https://github.com/zhangyuezhong/awskmskeyscripts.git
 
 ## create a new virtualenv
 
