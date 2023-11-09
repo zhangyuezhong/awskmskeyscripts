@@ -9,7 +9,7 @@
 
 ## create a new virtualenv
 
-    cd generate_csr_with_kms
+    cd awskmskeyscripts
     python3 -m venv venv
     # Please execute the following command on a Windows system:
     venv\Scripts\activate.bat
