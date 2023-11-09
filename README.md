@@ -19,7 +19,7 @@
 ## install prerequisite modules
 
     pip3 install -r requirements.txt
-    pip3 install boto3
+
 
 ## Notes.
 Ensure that the AWS credentials have the necessary permissions to utilize the KMS key.
